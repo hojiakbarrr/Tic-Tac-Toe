@@ -8,12 +8,36 @@
     tools:context=".MainActivity">
 
 
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="51dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/player2"
+        app:layout_constraintEnd_toStartOf="@+id/player2"
+        app:layout_constraintTop_toTopOf="@+id/player2"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/red" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="51dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/player1"
+        app:layout_constraintEnd_toStartOf="@+id/player1"
+        app:layout_constraintTop_toTopOf="@+id/player1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/yellow" />
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tic_tac"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="92dp"
         android:layout_marginEnd="70dp"
         android:text="Tic Tac Toe"
         android:textColor="#040404"
@@ -29,12 +53,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="142dp"
-        android:layout_marginTop="154dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="142dp"
         android:text="PLAY"
         android:textSize="40sp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/player2" />
+
+    <EditText
+        android:id="@+id/player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="72dp"
+        android:ems="10"
+        android:hint="Игрок 1"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tic_tac" />
+
+    <EditText
+        android:id="@+id/player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Игрок 2"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/player1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/player1"
+        app:layout_constraintTop_toBottomOf="@+id/player1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
