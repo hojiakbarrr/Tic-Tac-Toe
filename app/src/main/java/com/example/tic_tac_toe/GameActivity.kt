@@ -273,11 +273,6 @@ class GameActivity : AppCompatActivity() {
             arrayOf(0, 0, 0)   //c1,c2,c3
         )
 
-//        for (j in matrix.count()){
-//            for (i in j){
-//                matrix[j][i]=0
-//            }
-//        }
 
         binding.one.setImageResource(0)
         binding.two.setImageResource(0)
@@ -385,65 +380,8 @@ class GameActivity : AppCompatActivity() {
         } else {
 
         }
-//        if (selectedColor == 2) {
-//            Log.i("list","List Correct")
-////            if (o.image == red) {
-//                Log.i("MaList","list")
-////                if(o.id == 1&& o.id ==2 && o.id ==3){
-//                if (matrix[0][0] ==1 && matrix[0][1] == 1 && matrix[0][2] ==1) {
-//                    Log.i("Matrix","matrix")
-//                    binding.play1Text.text = "победа"
-//                }
-//
-//        }
-
-//            if (o.id == 1 && o.image  && o.id == 2 && o.id == 3) {
-//                binding.play1Text.text = "победа"
-//            } else {
-//            }
     }
 }
 
-//    private  fun itog(position: Position): String{
-//
-////        return when (selectedColor) {
-////            1 -> {
-////                "победа"
-////            }
-////            2 -> {
-////                "победа"
-////            }
-////            3 -> {
-////                "победа"
-////            }
-////
-////            else -> {
-////                "победа"
-////            }
-////        }
-//
-//
-//        if (position.id ==1 && position.id == 2 && position.id == 3){
-//            binding.play1Text.text = "победа"
-//        }
-//        for (o in list!!) {
-//            if (o.id == 1 && o.id == 2 && o.id == 3) {
-//            } else if (o.id == 4 && o.id == 5 && o.id == 6) {
-//
-//            } else if (o.id == 7 && o.id == 8 && o.id == 8) {
-//
-//            } else if (o.id == 1 && o.id == 5 && o.id == 9) {
-//
-//            } else if (o.id == 3 && o.id == 5 && o.id == 7) {
-//
-//            } else if (o.id == 1 && o.id == 4 && o.id == 7) {
-//
-//            } else if (o.id == 2 && o.id == 5 && o.id == 8)  {
-//
-//            }else if (o.id == 3 && o.id == 6 && o.id == 9){
-//
-//            }
-//        }
-//        return ""
-//    }
+
 
